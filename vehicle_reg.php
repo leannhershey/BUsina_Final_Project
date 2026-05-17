@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BUSINA - Vehicle Details</title>
-    <link rel="stylesheet" href="css/read.css">
+    <link rel="stylesheet" href="css/create.css">
 </head>
 <body>
-    <div class="read-box">
-        <div class="read-header">
+    <div class="create-box">
+        <div class="create-header">
             <h1><span class="orange-text">BU</span>SINA</h1>
             <p>Vehicle Registration & Owner Profile Details</p>
         </div>
@@ -23,4 +23,4 @@
                 <label>Vehicle Model / Description</label>
                 <input type="text" id="vehicle_model" name="vehicle_model" placeholder="e.g., Toyota Vios Black" required>
             </div>
-            
+
