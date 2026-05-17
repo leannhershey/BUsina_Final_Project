@@ -94,8 +94,14 @@ h3 {
     text-align: center;
 }
 
+.form-actions {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
 .btn-create {
-    width: 100%;
+    flex: 2; 
     padding: 12px;
     background: #f97316; 
     border: none;
@@ -104,7 +110,6 @@ h3 {
     font-weight: bold;
     cursor: pointer;
     font-size: 15px;
-    margin-top: 15px;
     transition: background 0.2s ease;
 }
 
@@ -112,9 +117,27 @@ h3 {
     background: #ea580c; 
 }
 
+.btn-next {
+    flex: 1;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    padding: 12px;
+    background: #0284c7; 
+    border-radius: 6px;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    transition: background 0.2s ease;
+}
+
+.btn-next:hover {
+    background: #0369a1; 
+}
+
 .login-link {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 25px;
     font-size: 13px;
     color: #94a3b8;
 }
