@@ -23,8 +23,13 @@
             
             <h3>👤 Owner Information</h3>
             <div class="input-group">
-                <label>Full Name</label>
-                <input type="text" id="full_name" name="full_name" placeholder="Enter your full name" required>
+                <label>First Name</label>
+                <input type="text" id="first_name" name="first_name" placeholder="Enter your first name" required>
+            </div>
+
+            <div class="input-group">
+                <label>Last Name</label>
+                <input type="text" id="last_name" name="last_name" placeholder="Enter your last name" required>
             </div>
 
             <div class="input-group">
@@ -38,12 +43,24 @@
             </div>
 
             <div class="input-group">
-                <label>User Type</label>
+                <label>Owner Type</label>
                 <select id="owner_type" name="owner_type" required>
-                    <option value="">Select user type</option>
+                    <option value="">Select owner type</option>
                     <option value="Student">Student</option>
                     <option value="Faculty">Faculty</option>
                     <option value="Staff">Staff</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <label>Department</label>
+                <select id="department" name="department" required>
+                    <option value="">Select department</option>
+                    <option value="Biology">Biology</option>
+                    <option value="Chemistry">Chemistry</option>
+                    <option value="Computer Science">Computer Science</option>
+                    <option value="Information Technology">Information Technology</option>
+                    <option value="Meteorology">Meteorology</option>
                 </select>
             </div>
 
