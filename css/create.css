@@ -1,0 +1,130 @@
+body {
+    background: #0f172a;
+    min-height: 100vh;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 40px 20px; 
+}
+
+.create-box {
+    width: 100%;
+    max-width: 480px;    
+    background: #1e293b; 
+    border-radius: 8px;
+    padding: 30px;
+    color: white;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
+.create-header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.create-header h1 {
+    color: #38bdf8; 
+    margin: 0 0 5px 0;
+    font-size: 32px;
+}
+
+.orange-text {
+    color: #f97316; 
+}
+
+.create-header p {
+    color: #94a3b8;
+    margin: 0;
+    font-size: 13px;
+}
+
+h3 {
+    font-size: 14px;
+    color: #38bdf8; 
+    margin: 20px 0 10px 0;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-bottom: 1px solid #475569;
+    padding-bottom: 5px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    font-size: 13px;
+    margin-bottom: 5px;
+    color: #cbd5e1;
+}
+
+.input-group input,
+.input-group select {
+    width: 100%;
+    padding: 10px;
+    background: #0f172a; 
+    border: 1px solid #475569;
+    border-radius: 6px;
+    color: white;
+    box-sizing: border-box;
+    outline: none;
+    font-size: 14px;
+}
+
+.input-group input:focus,
+.input-group select:focus {
+    border-color: #f97316;
+}
+
+.input-group select option {
+    background: #0f172a;
+    color: white;
+}
+
+.error-banner {
+    background: #ef4444;
+    color: white;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 13px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.btn-create {
+    width: 100%;
+    padding: 12px;
+    background: #f97316; 
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 15px;
+    margin-top: 15px;
+    transition: background 0.2s ease;
+}
+
+.btn-create:hover {
+    background: #ea580c; 
+}
+
+.login-link {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 13px;
+    color: #94a3b8;
+}
+
+.login-link a {
+    color: #38bdf8;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
