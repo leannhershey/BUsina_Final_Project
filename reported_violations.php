@@ -1,27 +1,22 @@
 <?php
 session_start();
-// 1. Link your database connection channel
 require_once 'config/db_connect.php'; 
 
-// Pagination logic rules
 $limit = 5; 
 $page = isset($_GET['page']) && is_numeric($_GET['page']) ? (int)$_GET['page'] : 1;
 if ($page < 1) $page = 1;
 $offset = ($page - 1) * $limit;
 
-// Capture search query strings for filtering
 $search = isset($_GET['search']) ? mysqli_real_escape_string($conn, trim($_GET['search'])) : '';
 
 $where_clause = "";
 if (!empty($search)) {
-    // Allows searching by plate number, driver name, or infraction type
     $where_clause = " WHERE v.plate_number LIKE '%$search%' 
                       OR o.first_name LIKE '%$search%' 
                       OR o.last_name LIKE '%$search%' 
                       OR vio.violation_type LIKE '%$search%'";
 }
 
-// Calculate totals for sliding pagination constraints
 $total_sql = "SELECT COUNT(*) FROM violation vio
               INNER JOIN registration r ON vio.reg_id = r.reg_id
               INNER JOIN vehicle v ON r.vehicle_id = v.vehicle_id
