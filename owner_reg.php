@@ -64,23 +64,11 @@
                 </select>
             </div>
 
-            <hr style="border: 0; border-top: 1px dashed #ccc; margin: 20px 0;">
-
-            <h3>🚗 Vehicle Information</h3>
-            <div class="input-group">
-                <label>Plate Number</label>
-                <input type="text" id="plate_number" name="plate_number" placeholder="e.g., ABC1234" pattern="[A-Za-z0-9 ]+" style="text-transform: uppercase;" required>
+            <div class="form-actions">
+                <button type="submit" name="register-btn" class="btn-create">Save Owner Information</button>
+                <a href="vehicle_reg.php" class="btn-next">Next</a>
             </div>
-
-            <div class="input-group">
-                <label>Vehicle Model / Description</label>
-                <input type="text" id="vehicle_model" name="vehicle_model" placeholder="e.g., Toyota Vios Black" required>
-            </div>
-
-            <button type="submit" name="register-btn" class="btn-create">Submit Registration</button>
         </form>
-
-        <p class="login-link">Already have an account? <a href="login.php">Log in here</a></p>
     </div>
 
     <script src="js/create_validation.js"></script>
