@@ -73,9 +73,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['update-btn'])) {
             </div>
             <nav class="sidebar-menu">
                 <a href="#" class="menu-item">📊 Dashboard</a>
-                <a href="owner_registration.php" class="menu-item">📝 Vehicle Registration</a>
-                <a href="registered_vehicles.php" class="menu-item active">🚗 Registered Vehicles</a>
+                <a href="owner_registration.php" class="menu-item active">📝 Vehicle Registration</a>
+                <a href="registered_vehicles.php" class="menu-item">🚗 Registered Vehicles</a>
+                <a href="gate_logs.php" class="menu-item">🚧 Gate Monitoring Logs</a>   
                 <a href="reported_violations.php" class="menu-item">🚨 Reported Violations</a>
+                <a href="security_guards.php" class="menu-item">🛡️ Security Personnel</a> 
                 <div class="menu-spacer"></div>
                 <a href="login.php" class="menu-item logout">🚪 Log Out</a>
             </nav>
